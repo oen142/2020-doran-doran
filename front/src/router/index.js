@@ -16,6 +16,10 @@ const routes = [
     name: "createPost",
     component: CreatePost,
   },
+  {
+    path: "/posts/:id",
+    name: "detailPage",
+  },
 ];
 
 const router = new VueRouter({

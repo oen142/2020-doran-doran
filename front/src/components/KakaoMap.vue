@@ -43,7 +43,7 @@ export default {
     },
     drawPosts() {
       this.$store.getters["post/getPosts"].forEach((post) => {
-        this.$setPostOverlay(post.content, post.location);
+        this.$setPostOverlay(post, this.$router);
       });
     },
   },
